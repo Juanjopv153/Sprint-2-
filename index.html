@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora uwu</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1 align="center"><b>Calculadora uwu</b></h1>
+    </header>
+    <main align="center">
+        <div class="calculadora">
+            <table >
+                <tr>
+                    <td colspan="4"><b><input type="text" id="resultado" value=0 readonly></b></td>
+                </tr>
+                <tr>
+                    <td><button class="Fino" onclick="funcionBorrar()">C</button></td>
+                    <td><button class="operador" onclick="signos()">+/-</button></td>
+                    <td><button class="operador" onclick="operador('%')">%</button></td>
+                    <td><button class="operador" onclick="operador('/')">÷</button></td>
+                </tr>
+                <tr>
+                    <td><button class="teclas" onclick="numero(7)">7</button></td>
+                    <td><button class="teclas" onclick="numero(8)">8</button></td>
+                    <td><button class="teclas" onclick="numero(9)">9</button></td>
+                    <td><button class="operador" onclick="operador('*')">x</button></td>
+                </tr>
+                <tr>
+                    <td><button class="teclas" onclick="numero(4)">4</button></td>
+                    <td><button class="teclas" onclick="numero(5)">5</button></td>
+                    <td><button class="teclas" onclick="numero(6)">6</button></td>
+                    <td><button class="operador" onclick="operador('-')">-</button></td>
+                </tr>
+                <tr>
+                    <td><button class="teclas" onclick="numero(1)">1</button></td>
+                    <td><button class="teclas" onclick="numero(2)">2</button></td>
+                    <td><button class="teclas" onclick="numero(3)">3</button></td>
+                    <td><button class="operador" onclick="operador('+')">+</button></td>
+                </tr>
+                <tr>
+                    <td><button class="teclas" onclick="numero(0)">0</button></td>
+                    <td><button class="teclas" onclick="funcionPunto('.')">.</button></td>
+                    <td><button class="Fino" onclick="borrar()">⌫</button></td>
+                    <td><button class="Fino" onclick="igualar()">=</button></td>
+                </tr>
+            </table>
+        </div>
+    </main>
+    <script src="script/script.js"></script>
+
+</body>
+
+</html>
